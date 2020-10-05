@@ -7,10 +7,10 @@
 
 The change illustrated between 2017 and 2018 for each ticker varies greatly between the two years. There was about at (20%) change in each stock from 2017 to 2018 returns. Since the script decreased execution times from about 47 secs to about 8 secs per year, as seen below, it’s much easier for Steve to compare year over year for each individual stock as well as the whole.
 
-**Original code:**
+	**Original code:**
 
  
-**Refactored code:**
+	**Refactored code:**
  
 
 It’s also called out easier with the conditional formatting included in the refactored code:
