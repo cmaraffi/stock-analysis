@@ -1,0 +1,28 @@
+# stock-analysis
+## Overview of Project 
+    Steve wanted the option to go through any amount of data and apply it to find out stock volume and return, based on the ticker symbols. This way he can give the best advice possible. The data given was for 2017 and 2018. With the original code already worked through, making it faster and more efficient would only aid analyzing the results, but aid in future endeavors.
+
+### Results
+
+The change illustrated between 2017 and 2018 for each ticker varies greatly between the two years. There was about at (20%) change in each stock from 2017 to 2018 returns. Since the script decreased execution times from about 47 secs to about 8 secs per year, as seen below, it’s much easier for Steve to compare year over year for each individual stock as well as the whole.
+
+Original code:
+
+ 
+
+Refactored code:
+ 
+
+It’s also called out easier with the conditional formatting included in the refactored code:
+
+ 
+
+### Summary
+
+#### What are the advantages or disadvantages of refactoring code?
+
+	Some advantages of refactored code are that it saves both time and space in excel. It can also go through larger data sets instead of more specific code. One disadvantage is if you don’t document more you might not necessarily know all the shortcuts you created. Adding the conditional formatting as part of the refactored code was another advantage to speed. 
+
+#### How do these pros and cons apply to refactoring the original VBA script?
+
+In the original VBA script, there is a flow and detailed process from start to finish in the code. When the code is re-factored it is built more efficient processing. It also was able to combine two separate subroutines, the original all stocks analysis code with the formatting so it’s all in one execution instead of two separate macros. I created two separate buttons initially because the original subroutines were separated. Now, it only needs one button to complete the entire process. A possible con to the refactoring might be if one part of the code breaks, it will halt the entire process. Whereas, with separated code it might be easier to troubleshoot issues. Overall refactoring was a good exercise to improve coding and set up the process to apply across more than one set of data. 
