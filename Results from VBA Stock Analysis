@@ -1,21 +1,37 @@
-# stock-analysis
-## Overview of Project 
+# **Stock-analysis in VBA**
+
+## **Overview of Project** 
     Steve wanted the option to go through any amount of data and apply it to find out stock volume and return, based on the ticker symbols. This way he can give the best advice possible. The data given was for 2017 and 2018. With the original code already worked through, making it faster and more efficient would only aid analyzing the results, but aid in future endeavors.
 
-### Results
+### **Results**
 
 The change illustrated between 2017 and 2018 for each ticker varies greatly between the two years. There was about at (20%) change in each stock from 2017 to 2018 returns. Since the script decreased execution times from about 47 secs to about 8 secs per year, as seen below, it’s much easier for Steve to compare year over year for each individual stock as well as the whole.
 
-Original code:
+**Original code:**
 
  
-
-Refactored code:
+**Refactored code:**
  
 
 It’s also called out easier with the conditional formatting included in the refactored code:
+```
+  'Formatting
+    Worksheets("All Stocks Analysis").Activate
+    Range("A3:C3").Font.FontStyle = "Bold"
+    Range("A3:C3").Borders(xlEdgeBottom).LineStyle = xlContinuous
+    Range("B4:B15").NumberFormat = "#,##0"
+    Range("C4:C15").NumberFormat = "0.0%"
+    Columns("B").AutoFit
 
- 
+    dataRowStart = 4
+    dataRowEnd = 15
+
+    For i = dataRowStart To dataRowEnd
+        
+        If Cells(i, 3) > 0 Then
+            
+            Cells(i, 3).Interior.Color = vbGreen••••ˇˇˇˇ
+ ```
 
 ### Summary
 
